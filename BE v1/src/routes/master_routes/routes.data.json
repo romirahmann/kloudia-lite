@@ -1,0 +1,58 @@
+[
+  {
+    "path": "/registrasi",
+    "method": "post",
+    "controller": "UserController.register"
+  },
+  {
+    "path": "/file/:fileName",
+    "method": "get",
+    "controller": "MinioController.checkFileExists"
+  },
+  {
+    "path": "/delete-file",
+    "method": "delete",
+    "controller": "MinioController.deleteFile"
+  },
+  {
+    "path": "/file-url",
+    "method": "post",
+    "controller": "MinioController.getFileUrl"
+  },
+  {
+    "path": "/cek-file/:fileName",
+    "method": "get",
+    "controller": "MinioController.checkFileExists"
+  },
+  {
+    "path": "/create-bucket",
+    "method": "post",
+    "controller": "MinioController.createBucket"
+  },
+
+  {
+    "path": "/count-files",
+    "method": "get",
+    "controller": "MetaController.getCountFile"
+  },
+  {
+    "path": "/files-payable",
+    "method": "get",
+    "controller": "MetaController.getAllPayable"
+  },
+  {
+    "path": "/files-receivable",
+    "method": "get",
+    "controller": "MetaController.getAllReceivable"
+  },
+  {
+    "path": "/document-name",
+    "method": "get",
+    "controller": "MetaController.getAllDocumentName"
+  },
+  {
+    "path": "/file-update/:id/document/:documentName",
+    "method": "put",
+    "controller": "MetaController.updateMetaData"
+  }
+]
